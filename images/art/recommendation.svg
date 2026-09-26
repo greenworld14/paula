@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <radialGradient id="g1" cx="0%" cy="50%" r="60%"><stop offset="0" stop-color="#38BDF8" stop-opacity=".35"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="#818CF8" stop-opacity=".5"/><stop offset="1" stop-color="#818CF8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818CF8"/><stop offset="1" stop-color="#5EEAD4"/></linearGradient>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#94A3B8" fill-opacity=".14"/></pattern>
+  </defs>
+  <rect width="480" height="320" fill="#0B1224"/>
+  <rect width="480" height="320" fill="url(#dots)"/>
+  <rect width="480" height="320" fill="url(#g1)"/>
+  <rect width="480" height="320" fill="url(#g2)"/>
+
+  <!-- event streams (Kafka) -->
+  <g fill="none" stroke-width="2.5" stroke-linecap="round">
+    <path d="M0 90C80 90 100 160 176 160" stroke="#38BDF8" stroke-opacity=".7"/>
+    <path d="M0 160H176" stroke="#5EEAD4" stroke-opacity=".7"/>
+    <path d="M0 230C80 230 100 160 176 160" stroke="#818CF8" stroke-opacity=".7"/>
+  </g>
+  <g fill="#E7ECF5"><circle cx="46" cy="92" r="4"/><circle cx="96" cy="160" r="4"/><circle cx="62" cy="228" r="4"/><circle cx="130" cy="150" r="3"/></g>
+
+  <!-- model node -->
+  <circle cx="200" cy="160" r="34" fill="#111A2E" stroke="url(#card)" stroke-width="3"/>
+  <circle cx="200" cy="160" r="48" fill="none" stroke="#818CF8" stroke-opacity=".3" stroke-width="2"/>
+  <path d="M186 160h28M200 146v28" stroke="#5EEAD4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M234 160H262" stroke="#5EEAD4" stroke-width="2.5" stroke-dasharray="4 5"/>
+
+  <!-- recommendation grid -->
+  <g transform="translate(270 44)">
+    <rect width="86" height="108" rx="12" fill="url(#card)"/>
+    <rect x="10" y="74" width="50" height="7" rx="3.5" fill="#0B1224" fill-opacity=".6"/>
+    <rect x="10" y="88" width="34" height="7" rx="3.5" fill="#0B1224" fill-opacity=".4"/>
+    <path d="M43 24l7 14 15 2-11 10 3 15-14-7-14 7 3-15-11-10 15-2z" fill="#0B1224" fill-opacity=".75"/>
+
+    <rect x="98" width="86" height="108" rx="12" fill="#111A2E" stroke="#2A3858"/>
+    <rect x="108" y="12" width="66" height="50" rx="8" fill="#1C2740"/>
+    <rect x="108" y="74" width="50" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="108" y="88" width="30" height="7" rx="3.5" fill="#2A3858"/>
+
+    <rect y="124" width="86" height="108" rx="12" fill="#111A2E" stroke="#2A3858"/>
+    <rect x="10" y="136" width="66" height="50" rx="8" fill="#1C2740"/>
+    <rect x="10" y="198" width="44" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="10" y="212" width="28" height="7" rx="3.5" fill="#2A3858"/>
+
+    <rect x="98" y="124" width="86" height="108" rx="12" fill="#111A2E" stroke="#5EEAD4" stroke-opacity=".6"/>
+    <rect x="108" y="136" width="66" height="50" rx="8" fill="#5EEAD4" fill-opacity=".15"/>
+    <text x="141" y="167" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#5EEAD4">98%</text>
+    <rect x="108" y="198" width="54" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="108" y="212" width="32" height="7" rx="3.5" fill="#2A3858"/>
+  </g>
+</svg>

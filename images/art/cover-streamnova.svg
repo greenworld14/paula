@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B1224"/><stop offset="1" stop-color="#141C3A"/></linearGradient>
+    <radialGradient id="g1" cx="80%" cy="0%" r="60%"><stop offset="0" stop-color="#818CF8" stop-opacity=".55"/><stop offset="1" stop-color="#818CF8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="15%" cy="100%" r="50%"><stop offset="0" stop-color="#5EEAD4" stop-opacity=".35"/><stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5EEAD4"/><stop offset=".5" stop-color="#818CF8"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  </defs>
+  <rect width="960" height="200" fill="url(#bg)"/>
+  <rect width="960" height="200" fill="url(#g1)"/>
+  <rect width="960" height="200" fill="url(#g2)"/>
+  <!-- audio / stream waveform -->
+  <g fill="url(#wave)" opacity=".85">
+    <rect x="40" y="92" width="8" height="16" rx="4"/><rect x="60" y="80" width="8" height="40" rx="4"/><rect x="80" y="64" width="8" height="72" rx="4"/>
+    <rect x="100" y="84" width="8" height="32" rx="4"/><rect x="120" y="56" width="8" height="88" rx="4"/><rect x="140" y="72" width="8" height="56" rx="4"/>
+    <rect x="160" y="88" width="8" height="24" rx="4"/><rect x="180" y="60" width="8" height="80" rx="4"/><rect x="200" y="76" width="8" height="48" rx="4"/>
+    <rect x="220" y="46" width="8" height="108" rx="4"/><rect x="240" y="70" width="8" height="60" rx="4"/><rect x="260" y="86" width="8" height="28" rx="4"/>
+    <rect x="280" y="62" width="8" height="76" rx="4"/><rect x="300" y="80" width="8" height="40" rx="4"/><rect x="320" y="92" width="8" height="16" rx="4"/>
+  </g>
+  <!-- play button -->
+  <circle cx="420" cy="100" r="40" fill="#111A2E" stroke="#818CF8" stroke-width="2"/>
+  <circle cx="420" cy="100" r="56" fill="none" stroke="#818CF8" stroke-opacity=".25" stroke-width="2"/>
+  <path d="M408 80v40l32-20z" fill="#5EEAD4"/>
+  <!-- neural net -->
+  <g stroke="#A5B4FC" stroke-opacity=".35" stroke-width="1.2">
+    <path d="M560 50L680 40M560 50L680 100M560 100L680 40M560 100L680 100M560 100L680 160M560 150L680 100M560 150L680 160M680 40L800 70M680 100L800 70M680 100L800 130M680 160L800 130M800 70L900 100M800 130L900 100"/>
+  </g>
+  <g fill="#A5B4FC"><circle cx="560" cy="50" r="6"/><circle cx="560" cy="100" r="6"/><circle cx="560" cy="150" r="6"/><circle cx="680" cy="40" r="6"/><circle cx="680" cy="160" r="6"/><circle cx="800" cy="130" r="6"/></g>
+  <g fill="#5EEAD4"><circle cx="680" cy="100" r="8"/><circle cx="800" cy="70" r="8"/><circle cx="900" cy="100" r="10"/></g>
+  <path d="M470 100H548" stroke="#5EEAD4" stroke-width="2" stroke-dasharray="5 6"/>
+</svg>

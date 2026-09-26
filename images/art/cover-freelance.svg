@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B1224"/><stop offset="1" stop-color="#0F1A30"/></linearGradient>
+    <radialGradient id="g1" cx="20%" cy="0%" r="60%"><stop offset="0" stop-color="#38BDF8" stop-opacity=".4"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="90%" cy="100%" r="60%"><stop offset="0" stop-color="#5EEAD4" stop-opacity=".35"/><stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="960" height="200" fill="url(#bg)"/>
+  <rect width="960" height="200" fill="url(#g1)"/>
+  <rect width="960" height="200" fill="url(#g2)"/>
+  <!-- globe -->
+  <g transform="translate(150 100)" fill="none" stroke="#38BDF8" stroke-opacity=".6" stroke-width="1.5">
+    <circle r="72"/>
+    <ellipse rx="30" ry="72"/><ellipse rx="58" ry="72"/>
+    <path d="M-72 0H72M-64 -34H64M-64 34H64"/>
+  </g>
+  <g fill="#5EEAD4"><circle cx="118" cy="72" r="5"/><circle cx="190" cy="120" r="5"/><circle cx="140" cy="140" r="5"/></g>
+  <!-- connection arcs -->
+  <g fill="none" stroke-width="2" stroke-dasharray="5 6">
+    <path d="M190 120C300 20 400 30 470 70" stroke="#5EEAD4"/>
+    <path d="M140 140C300 200 520 190 640 120" stroke="#818CF8"/>
+  </g>
+  <!-- browser window -->
+  <g transform="translate(470 38)">
+    <rect width="220" height="130" rx="12" fill="#111A2E" stroke="#2A3858"/>
+    <path d="M0 26H220" stroke="#2A3858"/>
+    <circle cx="16" cy="13" r="4" fill="#F87171"/><circle cx="30" cy="13" r="4" fill="#FBBF24"/><circle cx="44" cy="13" r="4" fill="#34D399"/>
+    <rect x="16" y="42" width="90" height="10" rx="5" fill="#E7ECF5" fill-opacity=".75"/>
+    <rect x="16" y="62" width="130" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="16" y="76" width="110" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="16" y="96" width="64" height="20" rx="10" fill="#5EEAD4"/>
+    <rect x="150" y="42" width="54" height="74" rx="8" fill="#818CF8" fill-opacity=".25" stroke="#818CF8" stroke-opacity=".6"/>
+  </g>
+  <!-- api / code window -->
+  <g transform="translate(720 60)">
+    <rect width="200" height="110" rx="12" fill="#0F172A" stroke="#2A3858"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="13">
+      <text x="16" y="30" fill="#818CF8">GET</text><text x="52" y="30" fill="#94A3B8">/api/orders</text>
+      <text x="16" y="56" fill="#5EEAD4">200</text><text x="52" y="56" fill="#64728C">OK · 42ms</text>
+      <text x="16" y="82" fill="#38BDF8">POST</text><text x="60" y="82" fill="#94A3B8">/checkout</text>
+    </g>
+  </g>
+</svg>

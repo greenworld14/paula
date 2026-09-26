@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <radialGradient id="g1" cx="85%" cy="10%" r="70%"><stop offset="0" stop-color="#818CF8" stop-opacity=".55"/><stop offset="1" stop-color="#818CF8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="5%" cy="100%" r="60%"><stop offset="0" stop-color="#5EEAD4" stop-opacity=".35"/><stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5EEAD4" stop-opacity=".35"/><stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/></linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#818CF8"/><stop offset="1" stop-color="#5EEAD4"/></linearGradient>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#94A3B8" fill-opacity=".14"/></pattern>
+  </defs>
+  <rect width="480" height="320" fill="#0B1224"/>
+  <rect width="480" height="320" fill="url(#dots)"/>
+  <rect width="480" height="320" fill="url(#g1)"/>
+  <rect width="480" height="320" fill="url(#g2)"/>
+
+  <!-- chart panel -->
+  <rect x="28" y="36" width="276" height="220" rx="14" fill="#111A2E" stroke="#2A3858"/>
+  <circle cx="48" cy="56" r="4" fill="#5EEAD4"/><rect x="60" y="52" width="70" height="8" rx="4" fill="#2A3858"/>
+  <rect x="236" y="50" width="52" height="14" rx="7" fill="#5EEAD4" fill-opacity=".15"/><rect x="244" y="55" width="36" height="4" rx="2" fill="#5EEAD4"/>
+  <g stroke="#1C2740"><path d="M48 100H288M48 140H288M48 180H288M48 220H288"/></g>
+  <path d="M48 110C80 150 100 172 132 184S196 204 228 210 272 216 288 217V236H48Z" fill="url(#area)"/>
+  <path d="M48 110C80 150 100 172 132 184S196 204 228 210 272 216 288 217" fill="none" stroke="#5EEAD4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 128C80 160 104 178 136 192S196 208 228 214 272 220 288 222" fill="none" stroke="#818CF8" stroke-width="2" stroke-dasharray="5 6" stroke-linecap="round"/>
+  <circle cx="228" cy="210" r="6" fill="#0B1224" stroke="#5EEAD4" stroke-width="3"/>
+
+  <!-- GPU chip -->
+  <g transform="translate(336 58)">
+    <g stroke="#475569" stroke-width="3" stroke-linecap="round">
+      <path d="M22 0V-10M44 0V-10M66 0V-10M88 0V-10M22 110V120M44 110V120M66 110V120M88 110V120M0 22H-10M0 44H-10M0 66H-10M0 88H-10M110 22H120M110 44H120M110 66H120M110 88H120"/>
+    </g>
+    <rect width="110" height="110" rx="14" fill="#111A2E" stroke="url(#chip)" stroke-width="2.5"/>
+    <rect x="22" y="22" width="66" height="66" rx="8" fill="url(#chip)" fill-opacity=".9"/>
+    <text x="55" y="61" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0B1224">GPU</text>
+  </g>
+
+  <!-- token stream -->
+  <g transform="translate(320 214)">
+    <rect width="34" height="22" rx="6" fill="#818CF8" fill-opacity=".25" stroke="#818CF8"/>
+    <rect x="42" width="46" height="22" rx="6" fill="#5EEAD4" fill-opacity=".2" stroke="#5EEAD4"/>
+    <rect x="96" width="30" height="22" rx="6" fill="#818CF8" fill-opacity=".25" stroke="#818CF8"/>
+    <rect y="30" width="52" height="22" rx="6" fill="#5EEAD4" fill-opacity=".2" stroke="#5EEAD4"/>
+    <rect x="60" y="30" width="66" height="22" rx="6" fill="#38BDF8" fill-opacity=".18" stroke="#38BDF8"/>
+  </g>
+</svg>

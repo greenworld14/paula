@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <radialGradient id="g1" cx="15%" cy="0%" r="70%"><stop offset="0" stop-color="#818CF8" stop-opacity=".45"/><stop offset="1" stop-color="#818CF8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="100%" cy="100%" r="70%"><stop offset="0" stop-color="#5EEAD4" stop-opacity=".35"/><stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#94A3B8" fill-opacity=".14"/></pattern>
+  </defs>
+  <rect width="480" height="320" fill="#0B1224"/>
+  <rect width="480" height="320" fill="url(#dots)"/>
+  <rect width="480" height="320" fill="url(#g1)"/>
+  <rect width="480" height="320" fill="url(#g2)"/>
+
+  <!-- stacked documents -->
+  <rect x="58" y="52" width="160" height="210" rx="12" fill="#111A2E" stroke="#1C2740" transform="rotate(-6 138 157)"/>
+  <g>
+    <path d="M44 40h124l38 38v200H44z" fill="#131E36" stroke="#2A3858" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M168 40v38h38" fill="#1C2740" stroke="#2A3858" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="64" y="60" width="80" height="10" rx="5" fill="#E7ECF5" fill-opacity=".8"/>
+    <rect x="64" y="96" width="120" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="62" y="112" width="92" height="14" rx="4" fill="#5EEAD4" fill-opacity=".25"/>
+    <rect x="64" y="116" width="88" height="7" rx="3.5" fill="#5EEAD4"/>
+    <rect x="160" y="116" width="26" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="64" y="136" width="110" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="64" y="152" width="46" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="114" y="148" width="66" height="14" rx="4" fill="#818CF8" fill-opacity=".25"/>
+    <rect x="116" y="152" width="62" height="7" rx="3.5" fill="#818CF8"/>
+    <rect x="64" y="172" width="120" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="62" y="186" width="70" height="14" rx="4" fill="#38BDF8" fill-opacity=".25"/>
+    <rect x="64" y="190" width="66" height="7" rx="3.5" fill="#38BDF8"/>
+    <rect x="64" y="210" width="98" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="64" y="226" width="118" height="7" rx="3.5" fill="#2A3858"/>
+    <rect x="64" y="242" width="60" height="7" rx="3.5" fill="#2A3858"/>
+  </g>
+
+  <!-- extraction arrows -->
+  <g fill="none" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5">
+    <path d="M196 119C230 119 236 96 268 96" stroke="#5EEAD4"/>
+    <path d="M196 155C230 155 236 150 268 150" stroke="#818CF8"/>
+    <path d="M196 193C230 193 236 204 268 204" stroke="#38BDF8"/>
+  </g>
+
+  <!-- structured output -->
+  <rect x="268" y="58" width="184" height="190" rx="14" fill="#0F172A" stroke="#2A3858"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13">
+    <text x="284" y="84" fill="#64728C">{</text>
+    <text x="298" y="102" fill="#5EEAD4">"entity":</text><rect x="370" y="93" width="64" height="10" rx="5" fill="#5EEAD4" fill-opacity=".35"/>
+    <text x="298" y="156" fill="#818CF8">"amount":</text><rect x="370" y="147" width="50" height="10" rx="5" fill="#818CF8" fill-opacity=".35"/>
+    <text x="298" y="210" fill="#38BDF8">"date":</text><rect x="354" y="201" width="70" height="10" rx="5" fill="#38BDF8" fill-opacity=".35"/>
+    <text x="284" y="236" fill="#64728C">}</text>
+  </g>
+  <rect x="380" y="36" width="72" height="24" rx="12" fill="#5EEAD4"/>
+  <text x="416" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0B1224">JSON</text>
+</svg>
